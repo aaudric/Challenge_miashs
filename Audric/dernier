@@ -1,0 +1,58 @@
+2025-03-31 15:31:22.166388: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2025-03-31 15:31:23.633511: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2025-03-31 15:31:23.634967: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2025-03-31 15:31:23.664388: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2025-03-31 15:31:23.664431: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2025-03-31 15:31:23.665911: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2025-03-31 15:31:23.665986: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2025-03-31 15:31:23.667307: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2025-03-31 15:31:23.667544: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2025-03-31 15:31:23.668905: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2025-03-31 15:31:23.669711: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2025-03-31 15:31:23.672757: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2025-03-31 15:31:23.673387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2025-03-31 15:31:23.673779: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-03-31 15:31:23.673942: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2025-03-31 15:31:23.674281: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2025-03-31 15:31:23.674304: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2025-03-31 15:31:23.674325: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2025-03-31 15:31:23.674335: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2025-03-31 15:31:23.674344: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2025-03-31 15:31:23.674352: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2025-03-31 15:31:23.674360: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2025-03-31 15:31:23.674369: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2025-03-31 15:31:23.674380: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2025-03-31 15:31:23.674867: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2025-03-31 15:31:23.674896: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+La colonne image_path a été ajoutée.
+Traceback (most recent call last):
+  File "/home/ch_miashs_3/scripts_audric/derniere_chance.py", line 64, in <module>
+    train_dataset = tf.data.Dataset.from_tensor_slices((train_paths, train_labels))
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 691, in from_tensor_slices
+    return TensorSliceDataset(tensors)
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 3155, in __init__
+    element = structure.normalize_element(element)
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/data/util/structure.py", line 129, in normalize_element
+    ops.convert_to_tensor(t, name="component_%d" % i, dtype=dtype))
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/profiler/trace.py", line 163, in wrapped
+    return func(*args, **kwargs)
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 1540, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/framework/tensor_conversion_registry.py", line 52, in _default_conversion_function
+    return constant_op.constant(value, dtype, name=name)
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/framework/constant_op.py", line 264, in constant
+    return _constant_impl(value, dtype, shape, name, verify_shape=False,
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/framework/constant_op.py", line 276, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/framework/constant_op.py", line 301, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/framework/constant_op.py", line 97, in convert_to_eager_tensor
+    ctx.ensure_initialized()
+  File "/home/ch_miashs_3/.conda/envs/tf-gpu_miashs/lib/python3.9/site-packages/tensorflow/python/eager/context.py", line 526, in ensure_initialized
+    context_handle = pywrap_tfe.TFE_NewContext(opts)
+tensorflow.python.framework.errors_impl.InternalError: CUDA runtime implicit initialization on GPU:0 failed. Status: out of memory
